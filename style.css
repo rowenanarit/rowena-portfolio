@@ -1,0 +1,82 @@
+/* Custom Styles for the Portfolio */
+
+/* Active Navigation Link Style */
+.active-nav-link {
+    background-color: #4CAF50 !important; /* The main highlight color */
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+    transform: translateX(4px);
+}
+
+/* Sidebar Profile Image Container */
+.round-image-container {
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.5);
+}
+
+/* Home Section Large Profile Image */
+.large-profile-image-container {
+    width: 280px; /* Adjust size as needed */
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #f0f0f0; /* Light border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    position: relative;
+}
+/* Optional: Add a subtle green shadow to the large image */
+.large-profile-image-container:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(76, 175, 80, 0.2);
+}
+
+/* General Link/Social Icon Highlighting (Using the green) */
+.social-link {
+    color: #4CAF50; /* Changed from text-blue-highlight to match the green theme */
+}
+.social-link:hover {
+    color: #388E3C; /* Darker green on hover */
+}
+
+/* About Me Table Style */
+.personal-details-table td {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed #e0e0e0;
+}
+.personal-details-table tr:last-child td {
+    border-bottom: none;
+}
+.personal-details-table td:first-child {
+    font-weight: 600;
+    color: #4CAF50; /* Highlight the labels */
+}
+
+/* Skills Badge (if not using tailwind classes inline) */
+/* If you use inline tailwind like in the refactored code, this is optional */
+/* .skill-badge {
+    display: inline-block;
+    background-color: #E8F5E9; 
+    color: #2E7D32;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+} */
+
+/* Contact Card Hover Effect */
+/* Already defined in inline tailwind classes in sections/contact.html */
+
+/* Typing Cursor Blinking Animation (Optional, but looks nice) */
+#typing-cursor {
+    animation: blink-caret .75s step-end infinite;
+    opacity: 1; /* Start visible */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: currentColor; }
+}
